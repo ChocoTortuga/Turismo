@@ -1,0 +1,23 @@
+.banner {
+  height: 350px;
+  background: #3C8FFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-banner {
+  -o-object-fit: cover;
+     object-fit: cover;
+  opacity: 0.5;
+  z-index: 0;
+}
+
+.texto-banner {
+  color: white;
+  padding: 0.5;
+  max-width: 350;
+  z-index: 1;
+  height: 4em;
+}
+/*# sourceMappingURL=estilos.css.map */
