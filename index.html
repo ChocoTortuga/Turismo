@@ -1,23 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Título-->
     <title>Turismo en Chile</title>
+
+    <!--Normalize-->
+    <link rel="stylesheet" href="normalize.css">
+
+    <!--Bootstrap-->
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    
+    <!--Sass-->
     <link rel="stylesheet" href="sass/estilos.css">
+    
+    <!--Icono-->
     <link rel="shortcut icon" type="image/png" href="img/Icono.png">
+    
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid bg-light">
         <!--Banner-->
         <div class="row">
             <div class="banner position-relative d-flex justify-content-center">
-                <h1 class="texto-banner position-absolute w-50 text-center m-auto">Lugares turisticos</h1>
+                <h1 class="texto-banner position-absolute w-100 text-center m-auto"><u>Zonas turísticas en Chile</u></h1>
                 <img src="img/Banner.png" class="img-fluid img-banner h-100 w-100">
             </div>
         </div>
+
+        <!--Navbar-->
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container-fluid">
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://chile.travel/">Lugares más populares</a>
+                    </li>
+                  
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://www.trivago.cl/">Hospedajes</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="https://www.latamairlines.com/cl/es">Aerolíneas</a>
+                    </li>                
+                </ul>
+                <form class="d-flex">
+                  <a class="nav-link contacto" href="https://www.gmail.com">Contacto</a>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <!--Contenido-->
+        <div class="row">
+            <!--Sidebar-->
+            <div class="col-3 sidebar p-4">
+                <h4>Otros sitios populares:</h4>
+                <p>Isla de pascua</p>
+                <img src="img/Isla.jpg" class="img-fluid">
+                <br>
+                <h4>Lugares fuera de Chile:</h4>
+                <h5 class="position-absolute px-3 py-3 paises">Australia</h5>
+                <img src="img/1Australia.jpg" class="img-fluid">
+                <br> <br>
+                <h5 class="position-absolute px-3 py-3 paises">China</h5>
+                <img src="img/2China.jpg" class="img-fluid">
+                <br> <br>
+                <h5 class="position-absolute px-3 py-3 paises">Egipto</h5>
+                <img src="img/3Egipto.jpg" class="img-fluid">
+            </div>
+
+            <!--Blog-->
+            <div class="col p-5">
+                <h4>El Cerro San Cristobal</h4>
+                <img src="img/CerroSanCristobal.jpg" class="img-fluid">
+                <br> <br>
+                <p class="justify-content-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore recusandae optio sunt neque facilis repellat dicta expedita id, vero laudantium officiis quaerat. Alias commodi soluta labore odit accusamus magnam eum.</p>
+                <h4>Valle del Elqui</h4>
+                <img src="img/Valle del Elqui.jpg" class="img-fluid">
+                <br> <br>
+                <p class="justify-content-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus, voluptatum. Odio voluptas vitae, voluptatem aliquid iure libero ducimus. Eum obcaecati nesciunt vitae sint voluptatum blanditiis reprehenderit et esse sit dolorum?</p>
+            </div>
+        </div>
+
+        <!--Footer-->
+        <footer class="row">
+            <div class="col-12 text-light text-center p-1">
+                <p>Copyright 2021</p>
+            </div>
+        </footer>
     </div>
     <script src="js/bootstrap.min.js"></script>
 </body>

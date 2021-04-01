@@ -1,6 +1,5 @@
 .banner {
-  height: 350px;
-  background: #3C8FFF;
+  height: 200px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -9,15 +8,42 @@
 .img-banner {
   -o-object-fit: cover;
      object-fit: cover;
-  opacity: 0.5;
   z-index: 0;
+  opacity: 0.3;
 }
 
 .texto-banner {
-  color: white;
+  color: #21334B;
   padding: 0.5;
   max-width: 350;
   z-index: 1;
-  height: 4em;
+  font-family: 'Lobster', cursive;
+  margin: 5%;
+  font-weight: bold;
+  font-size: 100px;
+}
+
+.navbar {
+  background-color: #21334B;
+}
+
+.contacto {
+  color: #21334B;
+  background-color: #3C8FFF;
+}
+
+.sidebar {
+  background-color: #95A9C4;
+  margin-left: 12px;
+}
+
+footer {
+  background-color: #21334B;
+}
+
+.paises {
+  color: white;
+  font-weight: bold;
+  -webkit-text-stroke: 1px black;
 }
 /*# sourceMappingURL=estilos.css.map */
