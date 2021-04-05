@@ -23,14 +23,17 @@
     <!--Font-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+
+    <!--FontAwesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
 </head>
 <body>
     <div class="container-fluid bg-light">
         <!--Banner-->
         <div class="row">
-            <div class="banner position-relative d-flex justify-content-center">
-                <h1 class="texto-banner position-absolute w-100 text-center m-auto"><u>Zonas turísticas en Chile</u></h1>
-                <img src="img/Banner.png" class="img-fluid img-banner h-100 w-100">
+            <div class="banner d-flex text-center">
+                <h1 class="texto-banner m-auto"><u>Agencia de viajes Cordillera</u></h1>
             </div>
         </div>
 
@@ -43,6 +46,9 @@
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
+                        <a class="nav-link text-light nombre" href="#">Cordillera</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link text-light" href="https://chile.travel/">Lugares más populares</a>
                     </li>
                   
@@ -54,9 +60,6 @@
                         <a class="nav-link text-light" href="https://www.latamairlines.com/cl/es">Aerolíneas</a>
                     </li>                
                 </ul>
-                <form class="d-flex">
-                  <a class="nav-link contacto" href="https://www.gmail.com">Contacto</a>
-                </form>
               </div>
             </div>
           </nav>
@@ -64,24 +67,23 @@
         <!--Contenido-->
         <div class="row">
             <!--Sidebar-->
-            <div class="col-3 sidebar p-4">
+            <div class="col-12 sidebar p-4 col-lg-3 order-2 order-lg-1">
                 <h4>Otros sitios populares:</h4>
                 <p>Isla de pascua</p>
                 <img src="img/Isla.jpg" class="img-fluid">
-                <br>
+                <br> <br>
                 <h4>Lugares fuera de Chile:</h4>
-                <h5 class="position-absolute px-3 py-3 paises">Australia</h5>
-                <img src="img/1Australia.jpg" class="img-fluid">
-                <br> <br>
-                <h5 class="position-absolute px-3 py-3 paises">China</h5>
-                <img src="img/2China.jpg" class="img-fluid">
-                <br> <br>
-                <h5 class="position-absolute px-3 py-3 paises">Egipto</h5>
-                <img src="img/3Egipto.jpg" class="img-fluid">
+                <br>
+                <!--Links-->
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action">Australia</a>
+                    <a href="#" class="list-group-item list-group-item-action">China</a>
+                    <a href="#" class="list-group-item list-group-item-action">Egipto</a>
+                </div>
             </div>
 
             <!--Blog-->
-            <div class="col p-5">
+            <div class="col p-5 order-1 order-lg-2">
                 <h4>El Cerro San Cristobal</h4>
                 <img src="img/CerroSanCristobal.jpg" class="img-fluid">
                 <br> <br>
@@ -96,6 +98,9 @@
         <!--Footer-->
         <footer class="row">
             <div class="col-12 text-light text-center p-1">
+                <a href="https://github.com" class="m-1 icono"><i class="fab fa-github-square fa-3x"></i></a>
+                <a href="https://twitter.com" class="m-1 icono"><i class="fab fa-twitter-square fa-3x"></i></a>
+                <a href="https://www.linkedin.com" class="m-1 icono"><i class="fab fa-linkedin fa-3x"></i></a>
                 <p>Copyright 2021</p>
             </div>
         </footer>
